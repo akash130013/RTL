@@ -1,0 +1,46 @@
+
+@import "./var";
+@import "./mixin";
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+.container{
+    background-color:$bg-color;
+    height: 100%;
+    width: 100%;
+    @include flex-prop;
+
+    .item{
+        width: 30%;
+        height: 250px;
+        border: 1px solid rebeccapurple;
+        box-sizing: border-box;
+        margin: 2rem;
+        padding: 1rem;
+        @include flex-prop;
+        border-radius: .5rem;
+        background-color: lightseagreen;
+        background-image: url(https://picsum.photos/200/300);
+
+        h1{
+            @include text-desc(2rem);
+            &:hover{
+                color: magenta;
+            }
+        }
+
+        h2{
+            color: #fff;
+            &:hover{
+                color:maroon
+            }
+        }
+
+    }
+   
+}
+

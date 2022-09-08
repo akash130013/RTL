@@ -1,0 +1,14 @@
+@mixin text-desc($size) {
+    font-size: $size;
+    color:$text-color-primary;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@mixin  flex-prop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

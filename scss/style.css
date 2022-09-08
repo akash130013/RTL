@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: lightblue;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.container .item {
+  width: 30%;
+  height: 250px;
+  border: 1px solid rebeccapurple;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: .5rem;
+  background-color: lightseagreen;
+  background-image: url(https://picsum.photos/200/300);
+}
+
+.container .item h1 {
+  font-size: 2rem;
+  color: lightyellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container .item h1:hover {
+  color: magenta;
+}
+
+.container .item h2 {
+  color: #fff;
+}
+
+.container .item h2:hover {
+  color: maroon;
+}
+/*# sourceMappingURL=style.css.map */
