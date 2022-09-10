@@ -23,6 +23,19 @@ $bc-olor: blue;
   border-radius: 0.5rem;
 }
 
+@mixin list {
+  @include flex-prop(center, 1.5rem);
+
+  .list-item {
+    list-style-type: none;
+
+    &:hover {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}
+
 a,
 a:hover,
 a:focus,
@@ -43,15 +56,15 @@ a:active {
     @include flex-prop(space-around, 1rem);
     .list {
       @include flex-prop(center, 1.5rem);
+      @include list;
+      // .list-item {
+      //   list-style-type: none;
 
-      .list-item {
-        list-style-type: none;
-
-        &:hover {
-          color: blue;
-          cursor: pointer;
-        }
-      }
+      //   &:hover {
+      //     color: blue;
+      //     cursor: pointer;
+      //   }
+      // }
 
       .item-link {
         // height: 2rem;
@@ -150,6 +163,17 @@ a:active {
         font-size: 0.6rem;
         font-weight: 300;
       }
+    }
+  }
+
+  footer {
+    @include flex-prop(center, 1rem);
+    height: 4rem;
+    background-color: $color-white;
+    .list {
+      @include flex-prop(center, 1.5rem);
+      @include list;
+      margin-top: -10px;
     }
   }
 }
